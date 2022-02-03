@@ -1,3 +1,14 @@
+# Quickstart build via Docker
+```commandline
+docker build -t relax .
+```
+To run the build, you can use the following command:
+```commandline
+docker run --rm -it -v <local-dir-path>:/<container-dir-path> relax
+```
+The `-v` option is used to mount the local directory to the container directory.
+Remove the `--rm` option to keep the container changes after exiting.
+
 ![Relax: It's not an acronym, it's a motto!](/graphics/Icon-Relax.png) 
 
 **Relax: It's not an acronym, it's a motto!**
