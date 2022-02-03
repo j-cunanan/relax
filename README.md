@@ -1,4 +1,10 @@
 # Quickstart build via Docker
+Clone this repository
+```
+git clone https://github.com/j-cunanan/relax.git
+cd relax
+```
+Build using this command. (Don't miss the 'dot' at the end)
 ```commandline
 docker build -t relax .
 ```
