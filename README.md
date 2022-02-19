@@ -1,4 +1,18 @@
-# Quickstart build via Docker
+![Relax: It's not an acronym, it's a motto!](/graphics/Icon-Relax.png) 
+
+**Relax: It's not an acronym, it's a motto!**
+
+### RELAX
+
+time-dependent postseismic deformation with afterslip and viscoelastic flow.
+
+### INSTALLATION:
+
+The code is written in Fortran90 and is optimized for the the gfortran and the 
+INTEL ifort compiler. The gmt 4.5+ library is required to export results to GMT 
+for post-processing.
+
+### Quickstart build via Docker
 Clone this repository
 ```
 git clone https://github.com/j-cunanan/relax.git
@@ -14,20 +28,6 @@ docker run --rm -it -v <local-dir-path>:/<container-dir-path> relax
 ```
 The `-v` option is used to mount the local directory to the container directory.
 Remove the `--rm` option to keep the container changes after exiting.
-
-![Relax: It's not an acronym, it's a motto!](/graphics/Icon-Relax.png) 
-
-**Relax: It's not an acronym, it's a motto!**
-
-### RELAX
-
-time-dependent postseismic deformation with afterslip and viscoelastic flow.
-
-### INSTALLATION:
-
-The code is written in Fortran90 and is optimized for the the gfortran and the 
-INTEL ifort compiler. The gmt 4.5+ library is required to export results to GMT 
-for post-processing.
 
 ### DOCUMENTATION:
 
