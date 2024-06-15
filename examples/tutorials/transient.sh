@@ -22,7 +22,7 @@ if [ ! -e $WDIR ]; then
 	mkdir $WDIR
 fi
 
-OMP_NUM_THREADS=2 time relax --with-transient $* <<EOF | tee $WDIR/in.param
+OMP_NUM_THREADS=2 relax --with-transient $* <<EOF | tee $WDIR/in.param
 # nonlinear viscoelastic relaxation (power exponent n=3)
 # following slip on a strike-slip fault
 #

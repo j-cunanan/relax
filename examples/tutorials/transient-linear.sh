@@ -22,7 +22,7 @@ if [ ! -e "$WDIR" ]; then
 	mkdir -p "$WDIR"
 fi
 
-OMP_NUM_THREADS=2 time relax --with-transient $* <<EOF | tee "$WDIR/in.param"
+OMP_NUM_THREADS=2 relax --with-transient $* <<EOF | tee "$WDIR/in.param"
 # linear viscoelastic relaxation with Burgers rheology
 # following slip on a strike-slip fault
 #

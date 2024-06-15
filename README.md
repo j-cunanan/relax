@@ -19,12 +19,13 @@ git clone https://github.com/j-cunanan/relax.git
 cd relax
 ```
 Build using this command. (Don't miss the 'dot' at the end)
+when running docker on M1/M2 Mac
 ```commandline
-docker build -t relax .
+docker build --platform=linux/amd64 -t relax . 
 ```
 To run the build, you can use the following command:
 ```commandline
-docker run --rm -it -v <local-dir-path>:/<container-dir-path> relax
+docker run --rm --platform=linux/amd64 -it -v ./examples:/relax/examples relax
 ```
 The `-v` option is used to mount the local directory to the container directory.
 Remove the `--rm` option to keep the container changes after exiting.
